@@ -8,5 +8,5 @@ else
         exit 1
     fi
     shift
-    sudo ./nsenter --target $PID --mount --uts --ipc --net --pid -- "$@"
+    sudo nsenter --target $PID --mount --uts --ipc --net --pid -- "$@"
 fi
